@@ -3,8 +3,11 @@
 An image posterizer using k-means clustering and kernel smoothing. Clustering is performed to extract the dominant colours from the images and group the
 existing pixels to fit those centroid colours. The smoother helps to scrub out outlier pixels
 
-## Examples
-
+## Dependancies
+- python 3.6+
+- PIL
+- sklearn
+- numpy
 
 ## Usage
 
@@ -38,8 +41,8 @@ python -m posterize \
     --outPath altered-image.jpg
 ```
 
-## Dependancies
-- python 3.6+
-- PIL
-- sklearn
-- numpy
+## Examples
+Photo by Roghi Arabpour from Pexels
+https://www.pexels.com/photo/woman-wearing-eyeglasses-3584758/
+
+<img src="images/example.gif" alt="example image" width="400px"/>
