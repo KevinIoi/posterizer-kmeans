@@ -109,9 +109,9 @@ if __name__ == '__main__':
                 help='str, adr to save posterized img')
     parser.add_argument('--smoother', metavar='--smoother', type=smootherParse, default=None,
                 help='Optional; str, defines what smoothing method should be used')
-    parser.add_argument('--kernel', metavar='--kernel', type=kernelParse, default="2 2",
+    parser.add_argument('--kernel', metavar='--kernel', type=kernelParse, default="2,2",
                 help='Optional; str, smoothing kernel size')
-    parser.add_argument('--stride', metavar='--stride', type=kernelParse, default="1 1",
+    parser.add_argument('--stride', metavar='--stride', type=kernelParse, default="1,1",
                 help='Optional; str, smoothing stride size')
     args = parser.parse_args()
 
