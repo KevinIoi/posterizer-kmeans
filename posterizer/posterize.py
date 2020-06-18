@@ -8,10 +8,10 @@ from pathlib import Path
 
 def main(args):
     try:
-        outfile = open(Path('tst.txt'),'w')
+        outfile = open(Path(args.outPath[0])),'w')
         outfile.close()
     except:
-        raise FileNotFoundError("invalid output path provided {}".format(args.inPath[0]))
+        raise FileNotFoundError("invalid output path provided {}".format(args.outPath[0]))
 
     # PIL has been exceptions than me
     img = Image.open(Path(args.inPath[0]))
